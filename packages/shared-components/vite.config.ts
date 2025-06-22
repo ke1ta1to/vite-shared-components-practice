@@ -9,6 +9,7 @@ export default defineConfig({
     react(),
     dts({
       insertTypesEntry: true,
+      tsconfigPath: "./tsconfig.build.json",
     }),
   ],
   build: {
@@ -18,6 +19,7 @@ export default defineConfig({
       formats: ["es", "cjs"],
       fileName: (format) => `index.${format === "es" ? "es.js" : "js"}`,
     },
+    emptyOutDir: true,
     rollupOptions: {
       external: ["react", "react-dom"],
       output: {
