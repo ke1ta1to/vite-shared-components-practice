@@ -1,0 +1,11 @@
+{
+  "name": "vite-shared-components-practice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "admin": "pnpm -F admin",
+    "user": "pnpm -F user",
+    "shared": "pnpm -F shared"
+  },
+  "packageManager": "pnpm@10.12.1"
+}
